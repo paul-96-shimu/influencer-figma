@@ -1,0 +1,210 @@
+/* fonts of poppies */
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Mahee:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+/* share style */
+* {
+  font-family: "Mukta Mahee", serif;
+  /* padding: 0;
+  margin: 0; */
+}
+.btn-primary {
+  background: #e02c6d;
+  border-radius: 41px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+/* header related style */
+header {
+  background: #fff;
+  padding: 50px 240px;
+  padding: 24px 24px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-size: 16px;
+}
+nav li a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+/* banner style */
+.banner {
+  display: flex;
+}
+.banner-content {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+.banner-title {
+  color: #3a3a3a;
+  font-weight: 700;
+  font-size: 52px;
+  width: 582px;
+}
+.banner-img {
+  background-image: url("./banner overlay.svg");
+  border-radius: 475px;
+  width: 475px;
+  height: 475px;
+}
+.banner-description {
+  width: 505px;
+  height: 60.9px;
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 16px;
+}
+/* picture section style */
+.section-title-popular {
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.card .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
+}
+/* picture section end */
+/* featured part style */
+.featured {
+  display: flex;
+  gap: 50px;
+  padding-left: 300px;
+  margin-top: 100px;
+  border-radius: 7px;
+  padding-right: 100px;
+}
+.featured-title {
+  color: #0a0826;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+}
+.featured-description {
+  color: #6c6c6c;
+  font-size: 16px;
+  font-weight: 700;
+  width: 501px;
+  height: 88px;
+}
+/* end of featured part */
+/* footer part start */
+.footer-section {
+  background: black;
+  padding-left: 500px;
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+  padding-top: 14px;
+}
+.footer-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 50px 400px 0 300px;
+}
+.footer-description {
+  color: #d9dbe1;
+  font-feature-settings: "liga" off;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0 400px 0 300px;
+}
+.footer-end {
+  color: var(--Text-Gray-300, #d9dbe1);
+  font-feature-settings: "liga" off;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 171.429% */
+  padding: 0 400px 0 300px;
+}
+.logo-img {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  /* gap: 20px; */
+  align-items: center;
+  /* border-bottom: 1px solid rgb(128, 128, 128);
+  border-top: 1px solid gray; */
+  width: 1110px;
+  padding-left: 300px;
+}
+/* media related */
+/* mobile device */
+@media screen and (max-width: 576px) {
+  header {
+    padding: 20px;
+  }
+  nav,
+  .banner,
+  .logo-img,
+  .featured,
+  .container {
+    flex-direction: column;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
